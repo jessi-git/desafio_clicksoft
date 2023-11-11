@@ -64,7 +64,7 @@ import Api from '../../services/api';
           <TextInput style={styles.inputBuscar} 
           value={nomeUsuario} 
           onChangeText={(texto) => setNomeUsuario(texto)}
-          placeholder="Pesquisar"
+          placeholder="Pesquisar..."
           />
           <TouchableOpacity style={styles.botaoBuscar} onPress={buscarUsuario}>
             <Text style={styles.botaoBuscarTexto}> Buscar </Text>
@@ -109,6 +109,7 @@ const styles=StyleSheet.create({
     containerPrincipal: {
       flex: 1,
       flexDirection: "row",
+      width: 450
     },
     title: {
       color: "#ffffff",
@@ -137,12 +138,12 @@ const styles=StyleSheet.create({
       borderColor: "#F875AA",
       color: "#F875AA",
       borderWidth: 2,
-      width: '67%',
+      width: '65%',
       fontSize: 18,
       marginTop: 10,
       marginEnd: 10,
       borderRadius: 10,
-      padding: 15,
+      padding: 10,
     },
     botaoBuscar: {
       backgroundColor: "#F875AA",
@@ -151,14 +152,14 @@ const styles=StyleSheet.create({
       marginTop: 10,
       marginEnd: 0,
       borderRadius: 10,
-      padding: 15,
+      padding: 10,
       alignItems: "center"
     },
     botaoBuscarTexto: {
       color: "#ffffff",
       fontSize: 22,
       textAlign: "center",
-      marginTop: -20
+      marginTop: 10
     },
     caixaTexto: {
       borderColor: "#F875AA",
@@ -167,7 +168,7 @@ const styles=StyleSheet.create({
       width: "90%",
       fontSize: 18,
       marginTop: 10,
-      borderRadius: 10,
+      borderRadius: 30,
       padding: 10,
       marginHorizontal: 20,
     },
